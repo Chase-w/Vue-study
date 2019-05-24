@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vue study </title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+        <span v-if="seen"> now you can see me</span>
+    </div>
+    
+    <hr>
+
+    <div id="demo2">
+        <ul>
+            <li v-for="item in lists"> {{item.ls}}</li>
+            
+        </ul>
+    </div>
+
+    <hr>
+
+    <div id="demo3">
+        <button>reverse message</button>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+<hr>
+
+
+
+</html>
