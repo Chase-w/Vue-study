@@ -3,32 +3,47 @@
 
 <head>
     <title>Vue study </title>
-    <link rel="stylesheet" href="./index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
     <div id="app">
+        <h3>条件 v-if</h3>
         {{message}}
         <span v-if="seen"> now you can see me</span>
     </div>
-    
+
     <hr>
 
     <div id="demo2">
+        <h3>循环 v-for</h3>
         <ul>
             <li v-for="item in lists"> {{item.ls}}</li>
-            
+
         </ul>
     </div>
 
     <hr>
 
     <div id="demo3">
-        <button>reverse message</button>
-
+        <h3>处理用户输入： reverse (v-on)</h3>
+        <button v-on:click="reverseMessage">reverse message</button>
+        <p>{{message}}</p>
     </div>
-    <script src="./index.js"></script>
+
+    <hr>
+
+
+    <div id="demo4">
+        <h3>处理用户输入： v-modal 双向绑定</h3>
+        <input type="text" v-model="shuru">
+        <p>{{shuru}}</p>
+    </div>
+
+
+
+
+    <script src="./demo.js"></script>
 </body>
 
 <hr>
